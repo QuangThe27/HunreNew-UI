@@ -1,0 +1,25 @@
+.wrapper {
+    padding: 10px;
+    background-color: var(--white-color);
+}
+
+.sidebar-list {
+    li {
+        cursor: pointer;
+        padding: 10px 0;
+
+        a {
+            font-size: 1.9rem;
+            font-weight: 550;
+        }
+
+        &:hover a {
+            color: rgb(145, 175, 237);
+        }
+    }
+}
+
+.sidebar-icon {
+    width: 26px;
+    margin-right: 10px;
+}

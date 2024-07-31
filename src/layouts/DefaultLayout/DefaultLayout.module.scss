@@ -1,0 +1,17 @@
+.body {
+    display: flex;
+    margin: 0 auto;
+    width: 1360px;
+}
+
+.sidebar {
+    flex: 0 0 20%;
+    max-width: 20%;
+    background-color: #f4f4f4;
+}
+
+.content {
+    flex: 0 0 80%;
+    max-width: 80%;
+    background-color: #dddddd;
+}
