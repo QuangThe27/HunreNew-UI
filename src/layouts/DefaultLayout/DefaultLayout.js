@@ -7,16 +7,21 @@ import classNames from 'classnames/bind';
 const cx = classNames.bind(style);
 
 function DefaultLayout({ children }) {
+    // Hiện thị sidebar
+    const showSidebar = true;
+
     return (
-        <div>
+        <div className={cx('wrapper')}>
             <Header />
 
             <div className={cx('body')}>
-                <div className={cx('sidebar')}>
-                    <Sidebar />
-                </div>
+                {showSidebar && (
+                    <div className={cx('sidebar')}>
+                        <Sidebar />
+                    </div>
+                )}
 
-                <div className={cx('content')}>{children}</div>
+                <div className={cx('content', { 'full-width': !showSidebar })}>{children}</div>
             </div>
 
             <Footer />

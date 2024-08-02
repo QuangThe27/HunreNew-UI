@@ -1,17 +1,25 @@
+.wrapper {
+    --width-screen: 1280px;
+}
+
 .body {
     display: flex;
     margin: 0 auto;
-    width: 1360px;
+    width: var(--width-screen);
 }
 
 .sidebar {
     flex: 0 0 20%;
     max-width: 20%;
-    background-color: #f4f4f4;
+    background-color: var(--white-color);
 }
 
 .content {
     flex: 0 0 80%;
     max-width: 80%;
-    background-color: #dddddd;
+
+    &.full-width {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
